@@ -1,12 +1,22 @@
 @media all and (orientation: portrait){
     header{
-        font-size: 10vw;
+        font-size: 10vw; 
+        background-image: url(assets/bg-landing-4.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     h1{
         font-size: 2vw;
     }
     h1 span{
         font-size: 8vw;
+    }
+    #intro{
+        background-image: url(assets/bg-landing-2.png), url(assets/bg-landing-3.png);
+        background-position: right top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: contain, contain;
     }
     #intro-text, #intro-book{
         font-size: 10vw;
@@ -21,6 +31,10 @@
 @media all and (orientation: landscape){
     header{
         font-size: 10vh;
+        background-image: url(assets/bg-landing-4.png), url(assets/bg-landing-3.png);
+        background-position: bottom center, bottom right 20%;
+        background-repeat: no-repeat,no-repeat;
+        background-size: contain, contain;
     }
     h1{
         font-size: 2vh;
@@ -28,8 +42,14 @@
     h1 span{
         font-size: 8vh;
     }
+    #intro{
+        background-image: url(assets/bg-landing-2.png);
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
     #intro-text, #intro-book{
-        font-size: 10vh;
+        font-size: 9vh;
     }
     #intro-logo{
         font-size: 11vh;

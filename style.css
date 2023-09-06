@@ -14,24 +14,27 @@ li{
     list-style: none;
 }
 body{
+    color: #fff;
     font-family: 'Chivo', sans-serif;
 } 
-#landing{
-    background-color: grey;
+#landing{ 
     display: grid;
     grid-template-rows: 1fr 4fr;
     height: 100vh;
     padding: 1rem;
+    background-image: url(assets/bg-landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-/** HEADER **/
+/** HEADER **/ 
 header nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
 h1{
-    text-align: center;
-    background-color: palegoldenrod;
+    text-align: center; 
 }
 h1 span{ 
     display: block;
@@ -39,8 +42,7 @@ h1 span{
 }
 .hamburger{ 
     position: relative;
-    z-index: 10;
-    background-color: palegreen;
+    z-index: 10; 
 }
 .hamburger .bar{
     display: block;
@@ -48,7 +50,7 @@ h1 span{
     height: 3px;
     margin: 5px 0; 
     transition: .5s all;
-    background-color: #000;
+    background-color: #fff;
 }
 .hamburger.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
@@ -67,32 +69,26 @@ h1 span{
     z-index: 0;
     width: 100%;
     height: 100%;
+    padding-left: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: skyblue;
+    justify-content: space-around; 
+    background-color: #595857;
 }
 #main-nav.active{
     left: 0;
-}
-#main-nav li{
-    background-color: pink;
-}
-#main-nav a{ 
-    background-color: yellow;
-}
+} 
 #logo-item{ display: none;}
 /** INTRO **/
 #intro{
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
-    background-color: skyblue;
+    justify-content: space-around;   
 }
-#intro-text a{ display:block; color: yellow; } 
+#intro-text a{ display: block; color: #ffc901; } 
 #intro-logo span{ display: block; }
-#intro-book a{ color: yellow; }
+#intro-book a{ color: #ffc901; }
 
 
 
