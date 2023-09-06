@@ -28,4 +28,13 @@
     h1 span{
         font-size: 8vh;
     }
+    #intro-text, #intro-book{
+        font-size: 10vh;
+    }
+    #intro-logo{
+        font-size: 11vh;
+    }
+    #intro-logo span{
+        font-size: 5vh;
+    }
 }
