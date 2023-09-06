@@ -1,0 +1,31 @@
+@media all and (orientation: portrait){
+    header{
+        font-size: 10vw;
+    }
+    h1{
+        font-size: 2vw;
+    }
+    h1 span{
+        font-size: 8vw;
+    }
+    #intro-text, #intro-book{
+        font-size: 10vw;
+    }
+    #intro-logo{
+        font-size: 11vw;
+    }
+    #intro-logo span{
+        font-size: 5vw;
+    }
+}
+@media all and (orientation: landscape){
+    header{
+        font-size: 10vh;
+    }
+    h1{
+        font-size: 2vh;
+    }
+    h1 span{
+        font-size: 8vh;
+    }
+}

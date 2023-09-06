@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Restaurant website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restauran website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atma&family=Chivo&family=Overpass:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-queries.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="landing">
+        <header>
+          <nav>
+            <h1>
+              <a href=""><span>L'Gran</span> food of your own choice</a>
+            </h1>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul id="main-nav">
+              <li><a href="">About us</a></li>
+              <li><a href="">Menu</a></li>
+              <li><a href="">Gallery</a></li>
+              <li id="logo-item">
+                <a href=""><span>L'Gran</span> food of your own choice</a>
+              </li>
+              <li><a href="">Bookings</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section id="intro">
+          <p id="intro-text">
+            Start your meal with our exclusive menu <a href="">Learn more...</a>
+          </p>
+          <p id="intro-logo">L'Gran <span>food of your own choice</span></p>
+          <p id="intro-book">
+            Book your <br />
+            table <a href="">now</a>
+          </p>
+        </section>
+      </div>
+      <div id="freepik">
+        <a href="http://www.freepik.com">Designed by Freepik</a>
+      </div>
+    </div>
+    <script>
+      const mainNav = document.querySelector("#main-nav");
+      const hamburger = document.querySelector(".hamburger");
+      function toggleMainNav() {
+        mainNav.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      }
+      hamburger.addEventListener("click", toggleMainNav, false);
+    </script>
+  </body>
+</html>

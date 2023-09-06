@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Chivo', sans-serif;
+} 
+#landing{
+    background-color: grey;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+    padding: 1rem;
+}
+/** HEADER **/
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    background-color: palegoldenrod;
+}
+h1 span{ 
+    display: block;
+    font-family: 'Atma', cursive;
+}
+.hamburger{ 
+    position: relative;
+    z-index: 10;
+    background-color: palegreen;
+}
+.hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0; 
+    transition: .5s all;
+    background-color: #000;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+#main-nav{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: .5s all;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: skyblue;
+}
+#main-nav.active{
+    left: 0;
+}
+#main-nav li{
+    background-color: pink;
+}
+#main-nav a{ 
+    background-color: yellow;
+}
+#logo-item{ display: none;}
+/** INTRO **/
+#intro{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    background-color: skyblue;
+}
+#intro-text a{ display:block; color: yellow; } 
+#intro-logo span{ display: block; }
+#intro-book a{ color: yellow; }
+
+
+
+#freepik{
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+}
+/**
+font-family: 'Atma', cursive;
+font-family: 'Chivo', sans-serif;
+font-family: 'Overpass', sans-serif;
+**/
