@@ -35,10 +35,12 @@ header nav{
 }
 h1{
     text-align: center; 
+    text-transform: lowercase;
 }
 h1 span{ 
     display: block;
     font-family: 'Atma', cursive;
+    text-transform: uppercase;
 }
 .hamburger{ 
     position: relative;
@@ -87,7 +89,8 @@ h1 span{
     justify-content: space-around;   
 }
 #intro-text a{ display: block; color: #ffc901; } 
-#intro-logo span{ display: block; }
+#intro-logo{ font-family: 'Atma', cursive; }
+#intro-logo span{ display: block; font-family: 'Chivo', sans-serif; text-transform: lowercase;}
 #intro-book a{ color: #ffc901; }
 
 
